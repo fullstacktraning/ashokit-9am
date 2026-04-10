@@ -1,0 +1,26 @@
+IDE : Integrated Development Environment
+
+Ex.
+        VSCode (Visual Studio Code)
+        Pycharm
+        Jupiter Notebook
+        Google Colab
+
+VSCode : https://code.visualstudio.com/download
+
+Python Software : https://www.python.org/downloads/
+
+> python3 --version (Python 3.14.3)
+
+Extension : .py
+
+Execute : python main.py
+
+Variables
+*********
+    Variables are used to store the data
+
+    declare
+    *******
+    1) variable declaration must have a-z, A-Z, 0-9, $ and _
+    2) variable declaration should not start with digits
