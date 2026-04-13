@@ -1,6 +1,6 @@
 # Function
 # Business logic (or) Block of Statements
-# reuse the business logic
+# "reuse" the business logic
 # def is the keyword, used to declare the function
 
 # Example - 1
@@ -101,3 +101,76 @@
 
 # func_one(10)
 # func_one(10,20,30,40,50)
+
+# function without name called as Lambda function / Anonymous Function
+# "lambda" is the keyword, is used to declare the Lambda function / Anonymous Function
+# Example - 11
+# abc = lambda num : num * num
+# print( abc(10) ) #100
+
+# Example - 12
+# check = lambda x :"Even" if x % 2 == 0 else "Odd"
+# print( check(9) )
+
+# Example - 13
+# addition = lambda num1,num2 : num1 + num2
+# print( addition(200,100) )
+               
+# Example - 14
+# nums = [10,20,30,40,50]
+# print( list(map(lambda x:x * 10, nums)))
+
+
+# Example - 15
+# filter() - used to apply conditions
+# nums = [10,15,20,25,30]
+# res = list( filter( lambda num: num%10 == 0,nums ) )
+# print(res)
+
+# Example - 16
+# multiply  = lambda num1 : (lambda num2 : num1*num2)
+# print( multiply(10)(20) )
+
+# Example - 17
+# list - []  tuple - ()  dict - {}
+# sorted() is the predefined function, used to sort the list data
+# stds = [("Std1",90),
+#         ("Std2",80),
+#         ("Std3",99),
+#         ("Std4",70),
+#         ("Std5",98)]
+# res = sorted(stds,key=lambda x:x[1])
+# print(res)
+
+# Example - 18
+# stds = [("Std1",90),
+#         ("Std2",80),
+#         ("Std3",99),
+#         ("Std4",70),
+#         ("Std5",98)]
+# res = sorted(stds,key=lambda x:x[1],reverse=True)
+# print(res)
+
+# Example - 19
+# data = {"num1": 10, "num2" : 40, "num3" : 20, "num4" : 30}
+# res = sorted( data.items(), key=lambda x:x[1])
+# print(res)
+
+# Example - 20
+# max() is the predefined function, used to find the highest element
+# nums = [5,12,8,20]
+# max_val = max(nums, key=lambda x:x)
+# print(max_val)
+
+# Example - 21
+# func  = lambda x :  "High" if x > 80 else ("Medium"  if x > 50 else "Low")
+# print(func(60))
+
+
+# Example - 22
+# def student(**data):
+#     print(data)
+
+# student(name="Std1",marks=90)
+
+
