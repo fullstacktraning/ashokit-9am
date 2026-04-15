@@ -163,18 +163,163 @@
 
 #Example-11
 #Multi Level
+# class Parent:
+#     def test1(self):
+#         print("Parent....!")
+
+# class Child(Parent):
+#     def test2(self):
+#         print("Child....!")
+
+# class Subchild(Child):
+#     def test3(self):
+#         print("Subchild....!")
+# obj = Subchild()
+# obj.test1()
+# obj.test2()
+# obj.test3()
+
+# Example-12
+# Multiple Inheritance
+# class Parent1:
+#     def test(self):
+#         print("Parent1 !!!")
+
+# class Parent2:
+#     def test(self):
+#         print("Parent2 !!!")
+
+# class Child(Parent1,Parent2):
+#     pass
+
+# obj = Child()
+# obj.test()
+
+# Ploymorphism
+# Behaves like many
+# overloadiong
+# overriding
+
+# Example - 13
+# overriding
+# overriding parent class functionality with child class functionality
+# class Parent:
+#     def db_conn(self):
+#         print("SQL Conn Soon...!")
+
+# class Child(Parent):
+#     def db_conn(self):
+#         print("NoSQL Conn Soon...!")
+
+# obj = Child()
+# obj.db_conn()
+
+# obj = Parent()
+# obj.db_conn()
+
+# Example-14
+# Overloading
+# class Test:
+#     def addition(self,a,b=0,c=0):
+#         print( a+b+c )
+
+# obj = Test()
+# obj.addition(10)
+# obj.addition(10,20)
+# obj.addition(10,20,30)
+
+# Example-15
+# Overloading
+# class Test:
+#     def addition(self,*args): 
+#         print(args)
+
+# obj = Test()
+# obj.addition(10,10)
+# obj.addition(10,20)
+# obj.addition(10,20,30)
+# obj.addition(10,20,30,40)
+
+# Example-16
+# Overloading
+# class Test:
+#     def addition(self, num1=None, num2=None, num3=None):
+#         if num1 and num2 and num3:
+#             print(num1 + num2 + num3)
+#         elif num1 and num2:
+#             print(num1 + num2)
+#         elif num1:
+#             print(num1)
+#         else:
+#             print(0)
+# obj = Test()
+# obj.addition(10)
+# obj.addition(10,20)
+# obj.addition(10,20,30)
+# obj.addition()
+
+#Examle-17
+# class Number:
+#     def __init__(self, num1):
+#         self.num1 = num1
+
+#     def __add__(self, other):
+#         return self.num1 + other.num1   # fixed here
+
+# n1 = Number(10)
+# n2 = Number(20)
+
+# print(n1 + n2)
+
+#Example-18
+#Dunder Methods
+# class Test:
+#     def __str__(self):
+#         return "Wecome"
+# obj = Test()
+# print(obj)
+
+#Example-19
+#abstract method
+# from abc import ABC,abstractmethod
+# class Business(ABC):
+#     @abstractmethod
+#     def start_business(self):
+#         pass
+
+# class Friend(Business):
+#     def start_business(self):
+#         print("Initiate AI Startup Company")
+
+# obj = Friend()
+# obj.start_business()
+
+#Example-20
+#child class function calling parent class func (super())
+# class Parent:
+#     def test1(self):
+#         print("hello")
+
+# class Child(Parent):
+#     def test2(self):
+#         super().test1()
+    
+# obj = Child()
+# obj.test2()
+
+#Exmple-21
+#Child class constructor calling Parent class constructor
 class Parent:
-    def test1(self):
-        print("Parent....!")
+    def __init__(self,param1):
+        self.param1 = param1
 
 class Child(Parent):
-    def test2(self):
-        print("Child....!")
+    def __init__(self, param1,param2):
+        super().__init__(param1)
+        self.param2 = param2
 
-class Subchild(Child):
-    def test3(self):
-        print("Subchild....!")
-obj = Subchild()
-obj.test1()
-obj.test2()
-obj.test3()
+obj = Child(200,100)
+print(obj.param1 + obj.param2)
+
+
+
