@@ -309,17 +309,114 @@
 
 #Exmple-21
 #Child class constructor calling Parent class constructor
-class Parent:
-    def __init__(self,param1):
-        self.param1 = param1
+# class Parent:
+#     def __init__(self,param1):
+#         self.param1 = param1
 
-class Child(Parent):
-    def __init__(self, param1,param2):
-        super().__init__(param1)
-        self.param2 = param2
+# class Child(Parent):
+#     def __init__(self, param1,param2):
+#         super().__init__(param1)
+#         self.param2 = param2
 
-obj = Child(200,100)
-print(obj.param1 + obj.param2)
+# obj = Child(200,100)
+# print(obj.param1 + obj.param2)
+
+# static methods
+# won't use "self" and "cls"
+# inside the class with the help os @staticmethod
+# we will call with the help of "Class Names"
+# utility methods (general purpose methods Ex. validations,....)
+
+# Example-22
+# class Test:
+#     @staticmethod
+#     def greet():
+#         print('welcome to static methods !!!')
+
+
+# Test.greet()
+
+# Example-23
+# class MathUtils:
+#     @staticmethod
+#     def square(num1):
+#         return num1*num1
+#     @staticmethod
+#     def cube(num1):
+#         return num1*num1*num1
+    
+# print(MathUtils.square(10))
+# print(MathUtils.cube(20))
+
+"""
+            instance            cls            static
+
+self         yes                no               no
+
+cls          no                yes               no
+
+usecase      object            class             common logic / utility logic / helper logic
+             related           related
+             task              task
+
+             
+decorarator no                @classmethod       @staticmethod
+
+
+access      yes               no                  no
+object
+data
+             
+"""
+
+# class Test:
+#     # class level variable
+#     cmp_name = "Oracle...!"
+
+#     #constructor
+#     def __init__(self,name):
+#         self.name = name
+
+#     #instance method
+#     def test1(self):
+#         print(self.name)
+
+#     #class method
+#     @classmethod
+#     def change_cmp_name(cls,new_cmp):
+#         cls.cmp_name = new_cmp
+
+#     #static method
+#     @staticmethod
+#     def is_major(age):
+#         return age>=18
+    
+# obj = Test("Emp1")
+# obj.test1()         # calling instance methods
+
+# Test.change_cmp_name("Microsoft...!")
+# print(Test.cmp_name)    #calling class level data
+
+# # obj.change_cmp_name("Microsoft...!") # works, but not suggested
+
+# print(Test.is_major(20)) # call the static methods
+
+# class
+# Object
+# instance
+# cls
+# static
+# abstract
+# inheritance
+# polymorphism
+# super()
+
+
+
+        
+
+
+
 
 
 

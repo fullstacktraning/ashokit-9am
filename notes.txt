@@ -24,3 +24,42 @@ Variables
     *******
     1) variable declaration must have a-z, A-Z, 0-9, $ and _
     2) variable declaration should not start with digits
+
+
+virtual environment
+*******************
+
+mac book
+********
+> python3 -m venv venv314
+> source venv314/bin/activate
+> create 
+        requirements.txt (root directory)
+            numpy
+> pip install -r requirements.txt
+
+windows
+*******
+> python3 -m venv venv314
+
+> venv314\Scripts\activate (cmd) / venv314\Scripts\activate.psi (powershell)
+
+> create requirements.txt
+
+> pip install -r requirements.txt
+
+
+numpy
+*****
+        numpy is the python library
+        numerical python
+        used to perform "mathematical operations"
+        numpy built on top of "c lang", so numpy have "good performance"
+
+        import numpy
+        ************
+        import numpy as np
+
+
+
+
