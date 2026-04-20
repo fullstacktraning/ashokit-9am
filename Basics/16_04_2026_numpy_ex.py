@@ -79,6 +79,67 @@ import numpy as np
 # print(np.dot(list1,list2))
 
 
+# Example - 10
+# 0 10 100 42 # Mathematics (Number System Vendor)
+# np.random.seed(42)
+# print( np.random.rand(2,2) )
+# print( np.random.randint(1,10,(2,3)) )
+# print( np.random.rand(3) )
+
+
+# print( np.full((3,3),100) )
+
+# list1 = np.array([10,20,30,40,50])
+# print(list1[list1>30])
+# print(list1[list1<30])
+
+# list1 = np.array( [[1,2,3],
+#                     [4,5,6]] )
+# print( np.sum(list1,axis=0) ) # column-wise sum
+# print( np.sum(list1,axis=1) ) # row-wise sum
+
+# list1 = np.arange(6)
+# list2 = list1.reshape(2,3) # convert 1D - MD
+# list3 = list2.flatten() # convert MD - ID
+# print(list3)
+
+# list1 = np.array( [1,2] )
+# print(list1.reshape(-1,1)) # [[1],[2]]
+
+
+# list1 = np.array([1,2])
+# list2 = np.array([3,4])
+# print( np.vstack( (list1,list2) ) )
+# print( np.hstack( (list1,list2) ) )
+
+# list1 = np.array([1,2,3,4,5,6,7,8,9])
+# new_list = np.split(list1,3) 
+# print(new_list[0])
+
+
+# list1 = np.array([1,2,3])
+# list2 = list1    # ref copy
+# list1[0] = 1000
+# print(list1)
+# print(list2)
+
+# list1 = np.array([1,2,3])
+# list2 = list1.copy() # copy
+# list1[0] = 1000
+# print(list1)
+# print(list2)
+
+# list1 = np.array([3,1,2])
+# print(np.sort(list1))
+# print(np.argsort(list1))
+
+# list1 = np.array([[1,2],
+#                   [3,4]])
+# list2 = np.array([[5,6],
+#                   [7,8]])
+# new_list1 = np.dot(list1,list2)
+# print(new_list1)
+# print(new_list1.T)
 
 
 
