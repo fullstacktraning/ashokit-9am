@@ -60,6 +60,21 @@ numpy
         ************
         import numpy as np
 
+pandas
+******
+        pandas also "python library"
+        pandas for "data analysis"
+        pandas deals "tabular data"
+        pandas able to "clean the data"
+
+        requirements.txt
+        pandas
+        openpyxl
+
+        pip install -r requirements
+
+        "openpyxl" is one of the python library, used to deal with "Excel Sheets"
+
 
 
 
