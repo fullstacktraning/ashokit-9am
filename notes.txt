@@ -76,5 +76,16 @@ pandas
         "openpyxl" is one of the python library, used to deal with "Excel Sheets"
 
 
+matplotlib
+        matplotlib, used to draw the graphs
+        1) Line
+        2) Bar
+        3) Pie
+        4) Scatter
+        5) Histogram
+
+
+ 
+
 
 
