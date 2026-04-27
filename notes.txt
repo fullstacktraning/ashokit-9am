@@ -84,7 +84,21 @@ matplotlib
         4) Scatter
         5) Histogram
 
+Lists
+*****
+        1) Ordered
+        2) Mutable
+        3) allows duplicates
+        4) hetrogeneous elements
+        5) []
 
+Tuples
+******
+        1) Ordered
+        2) immutable
+        3) allows duplicates
+        4) ()
+        5) faster compated to lists
  
 
 
